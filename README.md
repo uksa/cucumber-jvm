@@ -1,5 +1,6 @@
 Cucumber JVM
 ====
+[![Build Status](https://travis-ci.org/uksa/cucumber-jvm.svg?branch=master)](https://travis-ci.org/uksa/cucumber-jvm)
 
 #Tests
 
