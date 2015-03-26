@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -48,14 +49,14 @@ public class HooksStepDefs extends BrowserDriver {
 
         */
 
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("test-type");
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
 //        driver = new RemoteWebDriver( new URL("http://localhost:4444/wd/hub"), capabilities);
         /* Uncomment line/Change Driver for Local Display*/
-        driver = new ChromeDriver(capabilities);
+        driver = new FirefoxDriver(capabilities);
 //        */
 //        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         //sometimes waitrose-cellar might never load the homepage in
