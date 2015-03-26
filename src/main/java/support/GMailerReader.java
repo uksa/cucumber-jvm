@@ -9,7 +9,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by sam on 10/03/2014.
+ * Created by sam on 10/03/2015.
  */
 public class GMailerReader {
 	
